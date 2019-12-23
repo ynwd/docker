@@ -86,3 +86,24 @@
     ```
     $ docker run -it --name hello ubuntu bash
     ```
+    Response:
+    ```
+    root@0682abed1302:/#
+    ```
+    Exit:
+    ```
+    root@0682abed1302:/# exit 
+    ```
+7. List all container:
+    ```
+    $ docker container ls -a
+    ```
+    Response:
+    ```
+    CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES
+    0682abed1302        ubuntu              "bash"              15 hours ago        Exited (0) 18 seconds ago                       hello
+    ```
+8. Run stopped container:
+    ```
+    $ docker container start -i hello
+    ```
